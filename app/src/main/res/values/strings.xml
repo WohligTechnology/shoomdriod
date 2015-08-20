@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mat</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_search">Search a product or shop name....</string>
+    <string name="text_see">See near by products....</string>
+</resources>
