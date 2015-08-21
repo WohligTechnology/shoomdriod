@@ -1,42 +1,35 @@
 package com.example.jay.mat;
 
 import android.content.Intent;
-import android.graphics.BitmapFactory;
-import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
 
+public class Notification extends ActionBarActivity implements NavigationDrawerCallbacks {
 
-public class MainActivity extends ActionBarActivity
-        implements NavigationDrawerCallbacks {
-
-    /**
-     * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
-     */
-    private NavigationDrawerFragment mNavigationDrawerFragment;
     private Toolbar mToolbar;
     private TextView tvHome;
-    private int i=0;
-
+    private NavigationDrawerFragment mNavigationDrawerFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_notification);
+        Intent intent = getIntent();
+
         mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
         tvHome = (TextView) findViewById(R.id.toolbar_title);
         setSupportActionBar(mToolbar);
 
-        tvHome.setText("Home");
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_drawer);
-                getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        tvHome.setText("Notifications");
 
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
@@ -44,17 +37,11 @@ public class MainActivity extends ActionBarActivity
         //mNavigationDrawerFragment.setUserData("John Doe", "johndoe@doe.com", BitmapFactory.decodeResource(getResources(), R.drawable.avatar));
     }
 
+
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         //Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
-        if(i>0){
-            Intent search = new Intent(this,Notification.class);
-            Log.d("Message","selected");
-            startActivity(search);
-            Log.d("Message", "selected");
-        }
-        i++;
     }
 
 

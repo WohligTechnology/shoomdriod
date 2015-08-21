@@ -119,10 +119,15 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
     public List<NavigationItem> getMenu() {
         List<NavigationItem> items = new ArrayList<NavigationItem>();
         items.add(new NavigationItem("Home", getResources().getDrawable(R.drawable.ic_menu_check)));
-        items.add(new NavigationItem("Cart", getResources().getDrawable(R.drawable.ic_menu_check)));
+        items.add(new NavigationItem("Orders", getResources().getDrawable(R.drawable.ic_menu_check)));
+        items.add(new NavigationItem("Favourite Shops", getResources().getDrawable(R.drawable.ic_menu_check)));
+        items.add(new NavigationItem("Notifications", getResources().getDrawable(R.drawable.ic_menu_check)));
+        items.add(new NavigationItem("Order History", getResources().getDrawable(R.drawable.ic_menu_check)));
+        items.add(new NavigationItem("Wishlist", getResources().getDrawable(R.drawable.ic_menu_check)));
+        items.add(new NavigationItem("My Profile", getResources().getDrawable(R.drawable.ic_menu_check)));
         items.add(new NavigationItem("Settings", getResources().getDrawable(R.drawable.ic_menu_check)));
-        items.add(new NavigationItem("Help", getResources().getDrawable(R.drawable.ic_menu_check)));
-        items.add(new NavigationItem("About Us", getResources().getDrawable(R.drawable.ic_menu_check)));
+        items.add(new NavigationItem("FAQ", getResources().getDrawable(R.drawable.ic_menu_check)));
+        items.add(new NavigationItem("Logout", getResources().getDrawable(R.drawable.ic_menu_check)));
         return items;
     }
 
