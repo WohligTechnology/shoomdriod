@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="notification_array">
-        <item>12/08/2015 Your Parcel has been dispatched. It is expected to reach by evening 7 pm.</item>
-        <item>11/08/2015 Your Parcel has been dispatched. It is expected to reach by evening 7 pm.</item>
-        <item>10/08/2015 Your Parcel has been dispatched. It is expected to reach by evening 7 pm.</item>
-        <item>12/08/2015 Your Parcel has been dispatched. It is expected to reach by evening 7 pm.</item>
-        <item>09/08/2015 You favourite "Chedda "store has some amazing offers for you on .</item>
+        <item>12/08/2015 - Your Parcel has been dispatched.</item>
+        <item>11/08/2015 - Your Parcel has been dispatched. It is expected to reach by evening 7 pm.</item>
+        <item>10/08/2015 - Your order from "Raj" store has been Delivered at your place.</item>
+        <item>10/08/2015 - Your Parcel has been dispatched. It is expected to reach by evening 7 pm.</item>
+        <item>09/08/2015 - You favourite "Chedda" store has some amazing offers for you on food related products.</item>
+        <item>08/08/2015 - Invite your friends and get 20% on your next order.</item>
     </string-array>
 </resources>

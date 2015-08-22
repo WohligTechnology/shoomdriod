@@ -29,6 +29,14 @@
             android:name=".Notification"
             android:label="@string/title_activity_notification" >
         </activity>
+        <activity
+            android:name=".Orders"
+            android:label="@string/title_activity_orders" >
+        </activity>
+        <activity
+            android:name=".ShowToShopKeeper"
+            android:label="@string/title_activity_show_to_shop_keeper" >
+        </activity>
     </application>
 
 </manifest>

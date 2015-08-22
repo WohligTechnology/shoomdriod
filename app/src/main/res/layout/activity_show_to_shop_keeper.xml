@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jay.mat.Orders"
+    android:id="@+id/r">
+
+    <include android:id="@+id/toolbar_actionbar" layout="@layout/toolbar_default"
+        android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+
+
+    <android.support.v4.widget.DrawerLayout android:id="@+id/drawer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+
+        <fragment android:id="@+id/fragment_drawer"
+            android:name="com.example.jay.mat.NavigationDrawerFragment"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent" android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_actionbar">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="48 Hrs"
+                android:id="@+id/textView18"
+                android:gravity="right"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Chedda Store"
+                android:id="@+id/textView19"
+                android:gravity="center_horizontal"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView7"
+                android:src="@drawable/qr"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:maxHeight="140dp"
+                android:maxWidth="140dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="(Show this to shopkeeper)"
+                android:id="@+id/textView20"
+                android:gravity="center_horizontal"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Name: Lays 100gms"
+                android:id="@+id/textView21"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number: 98200 98200"
+                android:id="@+id/textView22"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location: Matunga"
+                android:id="@+id/textView23"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity: 20"
+                android:id="@+id/textView24"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transaction Id: 2723"
+                android:id="@+id/textView25"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Cost: Rs 200/-"
+                android:id="@+id/textView26"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@color/myPrimaryColor"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

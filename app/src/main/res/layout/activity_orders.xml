@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="com.example.jay.mat.Orders">
+
+        <include android:id="@+id/toolbar_actionbar" layout="@layout/toolbar_default"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+
+
+         <android.support.v4.widget.DrawerLayout android:id="@+id/drawer"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_actionbar">
+
+
+            <fragment android:id="@+id/fragment_drawer"
+                android:name="com.example.jay.mat.NavigationDrawerFragment"
+                android:layout_width="@dimen/navigation_drawer_width"
+                android:layout_height="match_parent" android:layout_gravity="start"
+                app:layout="@layout/fragment_navigation_drawer" />
+
+         </android.support.v4.widget.DrawerLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/drawer"
+        android:paddingBottom="1dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|bottom"
+            android:background="#cccccc"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Pending"
+                android:id="@+id/textView14"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:background="#fff"
+                android:layout_marginBottom="1dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Completed"
+                android:id="@+id/textView15"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:background="#fff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Cancelled"
+                android:id="@+id/textView16"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:background="#fff"
+                android:layout_marginBottom="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ccc"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/lays"
+                    android:scaleType="fitStart"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:background="#fff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/textView17"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:background="#fff"
+                    android:text="Lays 100gms" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

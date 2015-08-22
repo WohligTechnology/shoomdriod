@@ -9,4 +9,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_orders">Orders</string>
+    <string name="title_activity_show_to_shop_keeper">ShowToShopKeeper</string>
 </resources>
