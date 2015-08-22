@@ -41,6 +41,18 @@
             android:name=".Profile"
             android:label="@string/title_activity_profile" >
         </activity>
+        <activity
+            android:name=".Walletproduct"
+            android:label="@string/title_activity_walletproduct" >
+        </activity>
+        <activity
+            android:name=".Product"
+            android:label="@string/title_activity_product" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
+        </activity>
     </application>
 
 </manifest>
