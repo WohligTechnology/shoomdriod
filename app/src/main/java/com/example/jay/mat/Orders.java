@@ -10,12 +10,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TabHost;
 import android.widget.TextView;
+import android.widget.TabHost.TabSpec;
+import android.app.TabActivity;
+
 
 public class Orders extends ActionBarActivity implements NavigationDrawerCallbacks {
 
     private Toolbar mToolbar;
     private TextView tvHome;
     private NavigationDrawerFragment mNavigationDrawerFragment;
+    private TabHost tabHost;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,30 @@ public class Orders extends ActionBarActivity implements NavigationDrawerCallbac
         tvHome = (TextView) findViewById(R.id.toolbar_title);
         setSupportActionBar(mToolbar);
 
+        tabHost = (TabHost) findViewById(R.id.tabHost);
+        tabHost.setup();
+
+        // Tab for Photos
+
+        TabSpec compat = tabHost.newTabSpec("Completed");
+        compat.setIndicator("Completed");
+        compat.setContent(R.id.tab1);
+        tabHost.addTab(compat);
+
+        TabSpec compat1 = tabHost.newTabSpec("Pending");
+        compat1.setIndicator("Pending");
+        compat1.setContent(R.id.tab2);
+        tabHost.addTab(compat1);
+
+        TabSpec compat12 = tabHost.newTabSpec("Cancelled");
+        compat12.setIndicator("Cancelled");
+        compat12.setContent(R.id.tab3);
+        tabHost.addTab(compat12);
+
+
+
+
+
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_drawer);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -36,6 +64,7 @@ public class Orders extends ActionBarActivity implements NavigationDrawerCallbac
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
         // populate the navigation drawer
         //mNavigationDrawerFragment.setUserData("John Doe", "johndoe@doe.com", BitmapFactory.decodeResource(getResources(), R.drawable.avatar));
+
 
 
 

@@ -41,6 +41,10 @@
             android:name=".Profile"
             android:label="@string/title_activity_profile" >
         </activity>
+        <activity
+            android:name=".OrdersCompleted"
+            android:label="@string/title_activity_orders_completed" >
+        </activity>
     </application>
 
 </manifest>

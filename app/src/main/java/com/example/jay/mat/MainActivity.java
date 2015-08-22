@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -50,7 +49,7 @@ public class MainActivity extends ActionBarActivity
         // update the main content by replacing fragments
         //Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
         if(i>0){
-            Intent search = new Intent(this,ShowToShopKeeper.class);
+            Intent search = new Intent(this,Orders.class);
             startActivity(search);
         }
         i++;
