@@ -49,7 +49,11 @@ public class MainActivity extends ActionBarActivity
         // update the main content by replacing fragments
         //Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
         if(i>0){
+<<<<<<< HEAD
             Intent search = new Intent(this,Orders.class);
+=======
+            Intent search = new Intent(this,Login.class);
+>>>>>>> origin/master
             startActivity(search);
         }
         i++;

@@ -29,7 +29,8 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="right">
+            android:gravity="right"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -49,7 +50,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -83,7 +85,8 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -287,7 +290,7 @@
             android:layout_gravity="center_horizontal"
             android:textColor="#fff"
             android:background="@color/myPrimaryColor"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="20dp" />
 
     </LinearLayout>
         <android.support.v4.widget.DrawerLayout android:id="@+id/drawer"

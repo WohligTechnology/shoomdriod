@@ -12,5 +12,11 @@
     <string name="title_activity_orders">Orders</string>
     <string name="title_activity_show_to_shop_keeper">ShowToShopKeeper</string>
     <string name="title_activity_profile">Profile</string>
+<<<<<<< HEAD
     <string name="title_activity_orders_completed">OrdersCompleted</string>
+=======
+    <string name="title_activity_walletproduct">Walletproduct</string>
+    <string name="title_activity_product">Product</string>
+    <string name="title_activity_login">Login</string>
+>>>>>>> origin/master
 </resources>
