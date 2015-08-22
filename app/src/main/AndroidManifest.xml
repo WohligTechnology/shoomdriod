@@ -37,6 +37,10 @@
             android:name=".ShowToShopKeeper"
             android:label="@string/title_activity_show_to_shop_keeper" >
         </activity>
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile" >
+        </activity>
     </application>
 
 </manifest>

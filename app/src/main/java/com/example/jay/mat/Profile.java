@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class ShowToShopKeeper extends ActionBarActivity implements NavigationDrawerCallbacks {
+public class Profile extends ActionBarActivity implements NavigationDrawerCallbacks {
 
     private Toolbar mToolbar;
     private TextView tvHome;
@@ -19,7 +19,7 @@ public class ShowToShopKeeper extends ActionBarActivity implements NavigationDra
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show_to_shop_keeper);
+        setContentView(R.layout.activity_profile);
         Intent intent = getIntent();
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
@@ -29,7 +29,7 @@ public class ShowToShopKeeper extends ActionBarActivity implements NavigationDra
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_drawer);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        tvHome.setText("Orders");
+        tvHome.setText("Profile");
 
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
