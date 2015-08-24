@@ -11,8 +11,6 @@
 
 
 
-
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -57,7 +55,7 @@
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Username"
-                android:id="@+id/textView40"
+                android:id="@+id/textView420"
                 android:layout_margin="5dp"
                 android:padding="10dp" />
 
@@ -81,7 +79,7 @@
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Password"
-                android:id="@+id/textView40"
+                android:id="@+id/textView140"
                 android:layout_margin="5dp"
                 android:padding="10dp" />
 
@@ -113,20 +111,7 @@
             android:textSize="20sp"
             android:layout_marginTop="15dp" />
 
-        <android.support.v4.widget.DrawerLayout android:id="@+id/drawer"
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="wrap_content" android:layout_height="match_parent"
-            android:layout_alignParentBottom="true">
-
-
-            <fragment android:id="@+id/fragment_drawer"
-                android:name="com.example.jay.mat.NavigationDrawerFragment"
-                android:layout_width="@dimen/navigation_drawer_width"
-                android:layout_height="match_parent" android:layout_gravity="start"
-                app:layout="@layout/fragment_navigation_drawer" />
-
-        </android.support.v4.widget.DrawerLayout>
-
-
     </LinearLayout>
+
+
 </RelativeLayout>

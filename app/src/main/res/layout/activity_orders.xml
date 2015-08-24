@@ -9,17 +9,9 @@
             android:layout_width="match_parent" android:layout_height="wrap_content" />
 
 
-    <android.support.v4.widget.DrawerLayout android:id="@+id/drawer"
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent" android:layout_height="match_parent"
-            android:layout_below="@+id/toolbar_actionbar">
 
 
-            <fragment android:id="@+id/fragment_drawer"
-                android:name="com.example.jay.mat.NavigationDrawerFragment"
-                android:layout_width="@dimen/navigation_drawer_width"
-                android:layout_height="match_parent" android:layout_gravity="start"
-                app:layout="@layout/fragment_navigation_drawer" />
+
 
              <TabWidget
                  android:id="@android:id/tabs"
@@ -44,8 +36,6 @@
 
              </LinearLayout>
 
-
-    </android.support.v4.widget.DrawerLayout>
 
     <TabHost
         android:layout_width="match_parent"
@@ -72,26 +62,170 @@
                     android:id="@+id/tab1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">>
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="New Button1"
-                        android:id="@+id/button2" />
+                        android:layout_margin="20dp"
+                        android:background="#efefef">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageView6"
+                            android:src="@drawable/lays"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitStart"
+                            android:layout_margin="20dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Lays 100gms"
+                                android:id="@+id/textView14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Price: Rs 20/-"
+                                android:id="@+id/textView15"
+                                android:paddingTop="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Order Date: 20/08/2015"
+                                android:id="@+id/textView16"
+                                android:paddingTop="10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:background="#efefef">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageVie23w6"
+                            android:src="@drawable/lays"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitStart"
+                            android:layout_margin="20dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Lays 100gms"
+                                android:id="@+id/textView214" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Price: Rs 20/-"
+                                android:id="@+id/textView215"
+                                android:paddingTop="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Order Date: 20/08/2015"
+                                android:id="@+id/textView316"
+                                android:paddingTop="10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
                 </LinearLayout>
+
+
 
                 <LinearLayout
                     android:id="@+id/tab2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button2"
-                    android:id="@+id/button22" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:background="#efefef">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageView36"
+                            android:src="@drawable/lays"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitStart"
+                            android:layout_margin="20dp" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Lays 100gms"
+                                android:id="@+id/textView143" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Price: Rs 20/-"
+                                android:id="@+id/textView153"
+                                android:paddingTop="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Order Date: 20/08/2015"
+                                android:id="@+id/textView2316"
+                                android:paddingTop="10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -99,17 +233,76 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="New Button3"
-                        android:id="@+id/button223" />
+                        android:layout_margin="20dp"
+                        android:background="#efefef">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageView62"
+                            android:src="@drawable/lays"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="false"
+                            android:scaleType="fitStart"
+                            android:layout_margin="20dp" />
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Lays 100gms"
+                                android:id="@+id/textView1334" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Price: Rs 20/-"
+                                android:id="@+id/textView125"
+                                android:paddingTop="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Order Date: 20/08/2015"
+                                android:id="@+id/textView1246"
+                                android:paddingTop="10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
                 </LinearLayout>
 
             </FrameLayout>
         </LinearLayout>
     </TabHost>
 
+    <android.support.v4.widget.DrawerLayout android:id="@+id/drawer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_actionbar">
+
+        <fragment android:id="@+id/fragment_drawer"
+            android:name="com.example.jay.mat.NavigationDrawerFragment"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent" android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
 
 </RelativeLayout>

@@ -30,7 +30,7 @@ public class Product extends ActionBarActivity implements NavigationDrawerCallba
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_drawer);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        tvHome.setText("Orders");
+        tvHome.setText("Product");
 
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);

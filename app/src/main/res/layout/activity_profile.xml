@@ -6,12 +6,8 @@
         tools:context="com.example.jay.mat.Orders"
         android:id="@+id/r">
 
-<<<<<<< HEAD
-
-=======
         <include android:id="@+id/toolbar_actionbar" layout="@layout/toolbar_default"
             android:layout_width="match_parent" android:layout_height="wrap_content" />
->>>>>>> origin/master
 
 
 
