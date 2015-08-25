@@ -28,7 +28,7 @@ public class Signup extends ActionBarActivity implements NavigationDrawerCallbac
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_drawer);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        tvHome.setText("Login");
+        tvHome.setText("Signup");
 
         // Set up the drawer.
         //mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);

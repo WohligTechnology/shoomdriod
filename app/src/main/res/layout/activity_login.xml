@@ -24,7 +24,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:paddingTop="30dp"
-            android:paddingBottom="30dp">
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="20dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -42,57 +43,85 @@
 
         </LinearLayout>
 
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/editText5" />-->
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Username"
-                android:id="@+id/textView420"
-                android:layout_margin="5dp"
-                android:padding="10dp" />
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                <!--android:text="Username"-->
+                <!--android:id="@+id/textView420"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:padding="10dp" />-->
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:id="@+id/editText3"
-                android:layout_weight="1" />
+            <com.rey.material.widget.EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:hint="Username"
+                app:et_labelTextColor="#131313"
+                app:et_labelPadding="10dp"
+                app:et_labelEnable="true"
+                app:et_supportMaxChars="10"
+                app:et_supportMode="charCounter"
+                app:et_helper="Enter username"
+                app:et_error="Please enter only 20 char"
+                app:et_dividerColor="#ddd"
+                app:et_dividerErrorColor="#131313"
+                app:et_dividerHeight="1dp"
+                app:et_dividerPadding="5dp"
+                android:editable="true" />
+
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Password"
-                android:id="@+id/textView140"
-                android:layout_margin="5dp"
-                android:padding="10dp" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:inputType="textPassword"
-                android:ems="10"
-                android:id="@+id/editText4"
-                android:layout_weight="1" />
+            <com.rey.material.widget.EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="TextPassword"
+                android:id="@+id/editText"
+                android:hint="Password"
+                app:et_labelTextColor="#131313"
+                app:et_labelPadding="10dp"
+                app:et_labelEnable="true"
+                app:et_supportMaxChars="10"
+                app:et_supportMode="charCounter"
+                app:et_helper="Enter passoword"
+                app:et_error="Please enter only 20 char"
+                app:et_dividerColor="#ddd"
+                app:et_dividerErrorColor="#131313"
+                app:et_dividerHeight="1dp"
+                app:et_dividerPadding="5dp"
+                android:editable="true"/>
 
         </LinearLayout>
-        <Button
+        <!--<Button-->
+            <!--android:layout_width="148dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Login"-->
+            <!--android:id="@+id/button"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:textColor="#fff"-->
+            <!--android:background="@color/myPrimaryColor"-->
+            <!--android:layout_marginTop="40dp" />-->
+        <com.rey.material.widget.Button
+
             android:layout_width="148dp"
             android:layout_height="wrap_content"
             android:text="Login"
@@ -100,7 +129,9 @@
             android:layout_gravity="center_horizontal"
             android:textColor="#fff"
             android:background="@color/myPrimaryColor"
-            android:layout_marginTop="40dp" />
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:rd_enable="true"/>
 
         <TextView
             android:layout_width="wrap_content"
