@@ -25,37 +25,36 @@
         android:layout_below="@+id/toolbar_actionbar"
         android:weightSum="1">
 
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:weightSum="1"-->
+            <!--android:textAlignment="center"-->
+            <!--android:layout_marginTop="10dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:text="Sign up"-->
+                <!--android:id="@+id/etHsignup"-->
+                <!--android:textSize="25sp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:textAlignment="center"-->
+                <!--android:gravity="center_horizontal" />-->
+        <!--</LinearLayout>-->
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:weightSum="1"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="Sign up"
-                android:id="@+id/textView40"
-                android:textSize="25sp"
-                android:paddingTop="10dp"
-                android:textAlignment="center"
-                android:gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:layout_margin="20dp">
 
             <com.rey.material.widget.EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText"
+                android:id="@+id/etFirstname"
                 android:hint="First name"
                 app:et_labelTextColor="#131313"
                 app:et_labelPadding="10dp"
@@ -74,12 +73,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
 
             <com.rey.material.widget.EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText"
+                android:id="@+id/etLastname"
                 android:hint="Last name"
                 app:et_labelTextColor="#131313"
                 app:et_labelPadding="10dp"
@@ -98,12 +98,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
 
             <com.rey.material.widget.EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText"
+                android:id="@+id/etEmail"
                 android:inputType="textEmailAddress"
                 android:hint="Email"
                 app:et_labelTextColor="#131313"
@@ -123,12 +124,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
 
             <com.rey.material.widget.EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText"
+                android:id="@+id/etNumber"
                 android:inputType="phone"
                 android:hint="Phone number"
                 app:et_labelTextColor="#131313"
@@ -148,13 +150,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
 
             <com.rey.material.widget.EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="TextPassword"
-                android:id="@+id/editText"
+                android:inputType="textPassword"
+                android:id="@+id/etPasswordt"
                 android:hint="Password"
                 app:et_labelTextColor="#131313"
                 app:et_labelPadding="10dp"
@@ -173,13 +176,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
 
             <com.rey.material.widget.EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="TextPassword"
-                android:id="@+id/editText"
+                android:inputType="textPassword"
+                android:id="@+id/etConfirmpassword"
                 android:hint="Confirm Passoword"
                 app:et_labelTextColor="#131313"
                 app:et_labelPadding="10dp"
@@ -198,7 +202,7 @@
             android:layout_width="148dp"
             android:layout_height="wrap_content"
             android:text="Sign up"
-            android:id="@+id/button"
+            android:id="@+id/btSignup"
             android:layout_gravity="center_horizontal"
             android:textColor="#fff"
             android:background="@color/myPrimaryColor"
@@ -206,13 +210,16 @@
             android:layout_marginBottom="20dp"
             app:rd_enable="true"/>
 
-        <!--<com.rey.material.widget.Button-->
-            <!--style="@style/YourRippleDrawableStyle"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="BUTTON"-->
-            <!--app:rd_enable="true"-->
-            <!--/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALREADY HAVE  AN  ACCOUNT ? SIGN UP"
+            android:id="@+id/etSignin"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12sp"
+            android:textColor="#a8a8aa"
+            android:textStyle="normal"
+            android:layout_marginBottom="20dp" />
 
 
     </LinearLayout>

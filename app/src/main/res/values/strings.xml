@@ -18,4 +18,13 @@
     <string name="title_activity_product">Product</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_signup">Signup</string>
+
+    // sign up link
+
+    <string name="sign"><b>text1:</b> This is some text.  In
+      this text are some things that are actionable.  For instance,
+      you can click on http://www.google.com and it will launch the
+      web browser.  You can click on google.com too.  And, if you
+      click on (415) 555-1212 it should dial the phone.
+    </string>
 </resources>

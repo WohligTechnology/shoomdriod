@@ -103,12 +103,12 @@ public class MainActivity extends ActionBarActivity
                 //Intent search = new Intent(this, Notification.class);
                 //startActivity(search);
             }
-            if(position==9) { // Logout
+            if(position==9) { // Search
                 Intent search = new Intent(this, Search.class);
                 startActivity(search);
             }
             if(position==10) { // Logout
-                Intent search = new Intent(this, Login.class);
+                Intent search = new Intent(this, Signup.class);
                 startActivity(search);
             }
         }
