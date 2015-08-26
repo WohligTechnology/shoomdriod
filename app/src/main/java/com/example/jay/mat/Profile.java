@@ -1,6 +1,7 @@
 package com.example.jay.mat;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
@@ -16,14 +17,16 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import com.rey.material.widget.Button;
 
 
 
 public class Profile extends ActionBarActivity implements NavigationDrawerCallbacks {
 
     private Toolbar mToolbar;
-    private TextView tvHome;
+    private TextView tvHome,name,profilename,pronumber,number,location,destination,description,descnumber;
     private NavigationDrawerFragment mNavigationDrawerFragment;
+    private Button edit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +36,35 @@ public class Profile extends ActionBarActivity implements NavigationDrawerCallba
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
         tvHome = (TextView) findViewById(R.id.toolbar_title);
+        name = (TextView) findViewById(R.id.etProfile);
+        profilename = (TextView) findViewById(R.id.etprofilename);
+        pronumber = (TextView) findViewById(R.id.etPronumber);
+        number = (TextView) findViewById(R.id.etpronum);
+        location = (TextView) findViewById(R.id.etLocation);
+        destination = (TextView) findViewById(R.id.etAdd);
+        description = (TextView) findViewById(R.id.etDesc);
+        descnumber = (TextView) findViewById(R.id.etDescnum);
+        edit = (Button) findViewById(R.id.btEdit);
         setSupportActionBar(mToolbar);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_drawer);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         tvHome.setText("Profile");
+
+        Typeface myCustomFont = Typeface.createFromAsset(getAssets(), "fonts/Lato-Regular.ttf");
+
+
+        name.setTypeface(myCustomFont);
+        profilename.setTypeface(myCustomFont);
+        pronumber.setTypeface(myCustomFont);
+        number.setTypeface(myCustomFont);
+        location.setTypeface(myCustomFont);
+        destination.setTypeface(myCustomFont);
+        description.setTypeface(myCustomFont);
+        descnumber.setTypeface(myCustomFont);
+        edit.setTypeface(myCustomFont);
+
 
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);

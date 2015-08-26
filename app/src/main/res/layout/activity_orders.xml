@@ -68,41 +68,46 @@
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="20dp"
-                        android:background="#efefef">
+                        android:background="@drawable/border"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_width="91dp"
+                            android:layout_height="86dp"
                             android:id="@+id/imageView6"
                             android:src="@drawable/lays"
-                            android:layout_weight="1"
                             android:adjustViewBounds="true"
                             android:scaleType="fitStart"
-                            android:layout_margin="20dp" />
+                            android:layout_margin="10dp" />
 
                         <LinearLayout
                             android:orientation="vertical"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:padding="10dp"
-                            android:layout_margin="10dp">
+                            android:paddingTop="15dp"
+                            android:layout_gravity="center_horizontal">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:text="Lays 100gms"
-                                android:id="@+id/textView14" />
+                                android:id="@+id/textView14"
+                                android:textSize="18sp"
+                                android:textColor="#000" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:text="Price: Rs 20/-"
+                                android:text="Rs 20/-"
                                 android:id="@+id/textView15"
-                                android:paddingTop="10dp" />
+                                android:paddingTop="5dp"
+                                android:textSize="14sp"
+                                android:textColor="#23a8f5" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -110,7 +115,9 @@
                                 android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:text="Order Date: 20/08/2015"
                                 android:id="@+id/textView16"
-                                android:paddingTop="10dp" />
+                                android:paddingTop="5dp"
+                                android:textSize="14sp"
+                                android:textColor="#a8a8aa" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -118,52 +125,58 @@
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="20dp"
-                        android:background="#efefef">
+                        android:background="@drawable/border"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
 
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/imageVie23w6"
+                            android:layout_width="91dp"
+                            android:layout_height="86dp"
+                            android:id="@+id/imageView6"
                             android:src="@drawable/lays"
-                            android:layout_weight="1"
                             android:adjustViewBounds="true"
                             android:scaleType="fitStart"
-                            android:layout_margin="20dp" />
+                            android:layout_margin="10dp" />
 
                         <LinearLayout
                             android:orientation="vertical"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:padding="10dp"
-                            android:layout_margin="10dp">
+                            android:paddingTop="15dp"
+                            android:layout_gravity="center_horizontal">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:text="Lays 100gms"
-                                android:id="@+id/textView214" />
+                                android:id="@+id/textView14"
+                                android:textSize="18sp"
+                                android:textColor="#000" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:text="Price: Rs 20/-"
-                                android:id="@+id/textView215"
-                                android:paddingTop="10dp" />
+                                android:text="Rs 20/-"
+                                android:id="@+id/textView15"
+                                android:paddingTop="5dp"
+                                android:textSize="14sp"
+                                android:textColor="#23a8f5" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:text="Order Date: 20/08/2015"
-                                android:id="@+id/textView316"
-                                android:paddingTop="10dp" />
+                                android:id="@+id/textView16"
+                                android:paddingTop="5dp"
+                                android:textSize="14sp"
+                                android:textColor="#a8a8aa" />
                         </LinearLayout>
                     </LinearLayout>
-
 
                 </LinearLayout>
 

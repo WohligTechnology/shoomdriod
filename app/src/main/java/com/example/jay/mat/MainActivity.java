@@ -108,7 +108,7 @@ public class MainActivity extends ActionBarActivity
                 startActivity(search);
             }
             if(position==10) { // Logout
-                Intent search = new Intent(this, Signup.class);
+                Intent search = new Intent(this, Orders.class);
                 startActivity(search);
             }
         }

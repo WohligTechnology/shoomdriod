@@ -48,143 +48,178 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:background="#ccc">
+                android:background="#fff">
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Username :"
-                        android:id="@+id/textView21"
-                        android:textSize="18sp"
+                        android:text="Username "
+                        android:id="@+id/etProfile"
+                        android:textSize="14sp"
+                        android:textColor="#a8a8aa"
                         android:background="#fff"
                         android:layout_marginTop="1dp"
                         android:layout_marginBottom="0.5dp"
                         android:paddingTop="12dp"
                         android:paddingBottom="12dp"
-                        android:paddingLeft="15dp" />
+                        android:paddingLeft="5dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Sohan Honakeri"
-                        android:id="@+id/textView22"
+                        android:id="@+id/etprofilename"
                         android:layout_weight="1"
                         android:background="#fff"
                         android:gravity="left|center"
                         android:layout_marginTop="1dp"
                         android:layout_marginBottom="0.5dp"
-                        android:paddingLeft="10dp" />
+                        android:paddingLeft="40dp"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Phone Number :"
-                        android:id="@+id/textView24"
-                        android:textSize="18sp"
+                        android:text="Phone Number "
+                        android:id="@+id/etPronumber"
+                        android:textSize="14sp"
                         android:background="#fff"
                         android:layout_marginBottom="0.5dp"
                         android:paddingTop="12dp"
                         android:paddingBottom="12dp"
-                        android:paddingLeft="15dp" />
+                        android:textColor="#a8a8aa"
+                        android:paddingLeft="5dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="98200 98200"
-                        android:id="@+id/textView25"
+                        android:id="@+id/etpronum"
+                        android:inputType="phone"
                         android:layout_weight="1"
                         android:background="#fff"
                         android:gravity="left|center"
                         android:layout_marginBottom="0.5dp"
-                        android:paddingLeft="10dp" />
+                        android:paddingLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textIsSelectable="false" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Location :"
-                        android:id="@+id/textView26"
-                        android:textSize="18sp"
+                        android:text="Location "
+                        android:id="@+id/etLocation"
+                        android:textSize="14sp"
                         android:background="#fff"
                         android:layout_marginBottom="0.5dp"
                         android:paddingTop="12dp"
                         android:paddingBottom="12dp"
-                        android:paddingLeft="15dp" />
+                        android:paddingLeft="5dp"
+                        android:textColor="#a8a8aa" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Matunga -(East)"
-                        android:id="@+id/textView27"
+                        android:id="@+id/etAdd"
                         android:layout_weight="1"
                         android:background="#fff"
                         android:gravity="left|center"
                         android:layout_marginBottom="0.5dp"
-                        android:paddingLeft="10dp" />
+                        android:paddingLeft="50dp"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Description :"
-                        android:id="@+id/textView28"
-                        android:textSize="18sp"
+                        android:text="Description "
+                        android:id="@+id/etDesc"
+                        android:textSize="14sp"
                         android:background="#fff"
                         android:layout_marginBottom="0.5dp"
                         android:paddingTop="12dp"
                         android:paddingBottom="12dp"
-                        android:paddingLeft="15dp" />
+                        android:paddingLeft="5dp"
+                        android:textColor="#a8a8aa" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="227392"
-                        android:id="@+id/textView31"
+                        android:id="@+id/etDescnum"
                         android:layout_weight="1"
                         android:background="#fff"
                         android:gravity="left|center"
                         android:layout_marginBottom="0.5dp"
-                        android:paddingLeft="10dp" />
+                        android:paddingLeft="30dp"
+                        android:textSize="15sp"
+                        android:textColor="#000" />
                 </LinearLayout>
 
             </LinearLayout>
 
-            <Button
-                android:layout_width="68dp"
-                android:layout_height="34dp"
+            <com.rey.material.widget.Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Edit"
-                android:id="@+id/button"
+                android:id="@+id/btEdit"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#fff"
                 android:background="@color/myPrimaryColor"
-                android:layout_marginTop="30dp" />
+                app:rd_enable="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp" />
 
         </LinearLayout>
         <android.support.v4.widget.DrawerLayout android:id="@+id/drawer"
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent" android:layout_height="match_parent"
-            android:layout_alignParentBottom="true">
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="5dp">
 
 
             <fragment android:id="@+id/fragment_drawer"
