@@ -16,6 +16,7 @@ public class Product extends ActionBarActivity implements NavigationDrawerCallba
     private Toolbar mToolbar;
     private TextView tvHome;
     private NavigationDrawerFragment mNavigationDrawerFragment;
+    private int i=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,52 @@ public class Product extends ActionBarActivity implements NavigationDrawerCallba
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         //Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
+
+        if(i>0){
+
+            if(position==0) { // home
+                Intent search = new Intent(this, MainActivity.class);
+                startActivity(search);
+            }
+            if(position==1) { // orders
+                Intent search = new Intent(this, Walletproduct.class);
+                startActivity(search);
+            }
+            if(position==2) { // fav shop
+                //Intent search = new Intent(this, Notification.class);
+                //startActivity(search);
+            }
+            if(position==3) { // noti
+                Intent search = new Intent(this, Notification.class);
+                startActivity(search);
+            }
+            if(position==4) { //order history
+                Intent search = new Intent(this, Orders.class);
+                startActivity(search);
+            }
+            if(position==5) { //wishlist
+                //Intent search = new Intent(this, Product.class);
+                //startActivity(search);
+            }
+            if(position==6) { // my profile
+                Intent search = new Intent(this, Profile.class);
+                startActivity(search);
+            }
+            if(position==7) { // settings
+                //Intent search = new Intent(this, Splash.class);
+                //startActivity(search);
+            }
+            if(position==8) { //FAQ
+                //Intent search = new Intent(this, Signup.class);
+                //startActivity(search);
+            }
+            if(position==9) { // Logout
+                Intent search = new Intent(this, Login.class);
+                startActivity(search);
+            }
+        }
+        i++;
+
     }
 
 

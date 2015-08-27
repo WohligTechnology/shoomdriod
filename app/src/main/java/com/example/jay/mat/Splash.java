@@ -6,20 +6,40 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class OrdersCompleted extends AppCompatActivity {
+public class Splash extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_orders_completed);
+        setContentView(R.layout.activity_splash);
 
-        Intent intent = getIntent();
+        Thread timer = new Thread(){
+
+            public void run(){
+                try{
+                    sleep(3000);
+                }
+                catch(InterruptedException e){
+                    e.printStackTrace();
+                }finally {
+                    Intent main = new Intent(Splash.this,Login.class);
+                    startActivity(main);
+                }
+            }
+        };
+        timer.start();
+    }
+
+    @Override
+    protected  void onPause(){
+        super.onPause();
+        finish();
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_orders_completed, menu);
+        getMenuInflater().inflate(R.menu.menu_splash, menu);
         return true;
     }
 

@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Dishoom</string>
+    <string name="app_name">Dhishoom</string>
+    <string name="application_name">Dhishoom</string>
     <string name="drawer_open">Menu opened</string>
     <string name="drawer_close">Menu closed</string>
     <string name="action_settings">Settings</string>
@@ -19,12 +20,10 @@
     <string name="title_activity_login">Login</string>
     <string name="title_activity_signup">Signup</string>
 
-    // sign up link
+    <string name="lays">MRP <strike> Rs 40/- </strike> </string>
+    <string name="kurkure">MRP <strike> Rs 50/- </strike> </string>
+    <string name="krackjack">MRP <strike> Rs 30/- </strike> </string>
+    <string name="sprit">MRP <strike> Rs 40/- </strike> </string>
 
-    <string name="sign"><b>text1:</b> This is some text.  In
-      this text are some things that are actionable.  For instance,
-      you can click on http://www.google.com and it will launch the
-      web browser.  You can click on google.com too.  And, if you
-      click on (415) 555-1212 it should dial the phone.
-    </string>
+    <string name="title_activity_splash">Splash</string>
 </resources>

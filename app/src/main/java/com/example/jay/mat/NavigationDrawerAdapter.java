@@ -37,10 +37,10 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
                                                    @Override
                                                    public void onClick(View v) {
                                                        if (mSelectedView != null) {
-                                                           mSelectedView.setSelected(false);
+                                                           //mSelectedView.setSelected(false);
                                                        }
                                                        mSelectedPosition = viewHolder.getAdapterPosition();
-                                                       v.setSelected(true);
+                                                      // v.setSelected(true);
                                                        mSelectedView = v;
                                                        if (mNavigationDrawerCallbacks != null)
                                                            mNavigationDrawerCallbacks.onNavigationDrawerItemSelected(viewHolder.getAdapterPosition());
@@ -57,11 +57,11 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
         viewHolder.textView.setCompoundDrawablesWithIntrinsicBounds(mData.get(i).getDrawable(), null, null, null);
         if (mSelectedPosition == i) {
             if (mSelectedView != null) {
-                mSelectedView.setSelected(false);
+                //mSelectedView.setSelected(false);
             }
             mSelectedPosition = i;
             mSelectedView = viewHolder.itemView;
-            mSelectedView.setSelected(true);
+            //mSelectedView.setSelected(true);
         }
     }
 

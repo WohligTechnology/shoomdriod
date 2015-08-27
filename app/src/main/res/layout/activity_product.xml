@@ -9,7 +9,6 @@
         android:layout_width="match_parent" android:layout_height="wrap_content" />
 
 
-
     <android.support.v4.widget.DrawerLayout android:id="@+id/drawer"
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent" android:layout_height="match_parent"
@@ -22,81 +21,307 @@
             android:layout_height="match_parent" android:layout_gravity="start"
             app:layout="@layout/fragment_navigation_drawer" />
 
+            <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
+            android:clickable="true" android:layout_height="match_parent">
+
+                <ScrollView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="476dp"
+                    android:fillViewport="true">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:layout_width="1411dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imageView8"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/product"
+                                android:layout_weight="0.20"
+                                android:padding="20dp"
+                                android:background="#fff" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lays 100gms"
+                                android:id="@+id/textView36"
+                                android:gravity="center_horizontal"
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                android:background="#fff"
+                                android:padding="5dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Chheda Stores"
+                                android:id="@+id/textView37"
+                                android:gravity="center_horizontal"
+                                android:background="#fff"
+                                android:padding="5dp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lays"
+                                android:id="@+id/textView38"
+                                android:gravity="center_horizontal"
+                                android:background="#fff"
+                                android:padding="5dp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rs 20/- (Saving Rs 20/-)"
+                                android:id="@+id/textView39"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:background="#fff"
+                                android:padding="5dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cheese &amp; Onion flavor crisps made with sunseed oil and now have 70% less saturated fat!"
+                                android:id="@+id/textView40"
+                                android:gravity="center_horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:background="#fff"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:background="#fff">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageButton2"
+                                    android:background="@drawable/ic_action_sub" />
+
+                                <EditText
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/editText3"
+                                    android:inputType="text"
+                                    android:text="1"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center_horizontal"
+                                    android:gravity="center_horizontal" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageButton"
+                                    android:background="@drawable/ic_action_add" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Related :"
+                                android:id="@+id/textView41"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="10dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#cccccc"
+                                    android:layout_weight="1"
+                                    android:layout_margin="25dp">
+
+                                    <ImageView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageView5"
+                                        android:src="@drawable/kj"
+                                        android:baselineAlignBottom="false"
+                                        android:scaleType="fitStart"
+                                        android:adjustViewBounds="true" />
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:text="Krackjack"
+                                        android:id="@+id/textView66"
+                                        android:padding="5dp"
+                                        android:textAlignment="center"
+                                        android:textStyle="bold"
+                                        android:minLines="1"
+                                        android:gravity="center"
+                                        android:background="#ffffff"
+                                        android:layout_marginRight="0.25dp" />
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:text="@string/krackjack"
+                                        android:id="@+id/textView43"
+                                        android:padding="5dp"
+                                        android:textAlignment="center"
+                                        android:minLines="1"
+                                        android:gravity="center"
+                                        android:background="#ffffff"
+                                        android:layout_marginRight="0.25dp" />
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:text="Rs 15/- Save Rs 15/-"
+                                        android:id="@+id/textView72"
+                                        android:padding="5dp"
+                                        android:textAlignment="center"
+                                        android:textStyle="bold"
+                                        android:minLines="1"
+                                        android:gravity="center"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#ffffff"
+                                        android:layout_marginRight="0.25dp"
+                                        android:layout_marginBottom="0.25dp" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="25dp"
+                                    android:background="#cccccc"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/imageView5"
+                                        android:src="@drawable/kj"
+                                        android:baselineAlignBottom="false"
+                                        android:scaleType="fitStart"
+                                        android:adjustViewBounds="true" />
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:text="Krackjack"
+                                        android:id="@+id/textView66"
+                                        android:padding="5dp"
+                                        android:textAlignment="center"
+                                        android:textStyle="bold"
+                                        android:minLines="1"
+                                        android:gravity="center"
+                                        android:background="#ffffff"
+                                        android:layout_marginRight="0.25dp" />
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:text="@string/krackjack"
+                                        android:id="@+id/textView43"
+                                        android:padding="5dp"
+                                        android:textAlignment="center"
+                                        android:minLines="1"
+                                        android:gravity="center"
+                                        android:background="#ffffff"
+                                        android:layout_marginRight="0.25dp" />
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:text="Rs 15/- Save Rs 15/-"
+                                        android:id="@+id/textView72"
+                                        android:padding="5dp"
+                                        android:textAlignment="center"
+                                        android:textStyle="bold"
+                                        android:minLines="1"
+                                        android:gravity="center"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="#ffffff"
+                                        android:layout_marginRight="0.25dp"
+                                        android:layout_marginBottom="0.25dp" />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#c8c8cc">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add To Cart"
+                        android:id="@+id/textView34"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:background="#fff"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:padding="5dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Pick Up"
+                        android:id="@+id/textView35"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:background="#fff"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:padding="5dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </FrameLayout>
     </android.support.v4.widget.DrawerLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignTop="@+id/drawer">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Lays 100Gms"
-            android:id="@+id/textView46"
-            android:paddingTop="10dp"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView9"
-            android:layout_marginTop="37dp"
-            android:src="@drawable/lays"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView10"
-            android:src="@drawable/right237"
-            android:layout_alignBottom="@+id/imageView9"
-            android:layout_toRightOf="@+id/imageView9"
-            android:layout_toEndOf="@+id/imageView9" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView11"
-            android:src="@drawable/left216"
-            android:layout_alignTop="@+id/imageView9"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignBottom="@+id/imageView9"
-            android:layout_toLeftOf="@+id/imageView9"
-            android:layout_toStartOf="@+id/imageView9" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Chheda Store"
-            android:id="@+id/textView47"
-            android:layout_below="@+id/textView46"
-            android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MRP Rs 40 /-"
-            android:id="@+id/textView48"
-            android:clickable="false"
-            android:layout_below="@+id/textView47"
-            android:layout_centerHorizontal="true"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Our Price Rs20/-"
-            android:id="@+id/textView49"
-            android:layout_below="@+id/textView48"
-            android:layout_centerHorizontal="true" />
-
-    </RelativeLayout>
 
 </RelativeLayout>

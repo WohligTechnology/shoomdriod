@@ -66,13 +66,12 @@ public class MainActivity extends ActionBarActivity
         //Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
         if(i>0){
 
-            Log.isLoggable("List Item",position);
             if(position==0) { // home
                 Intent search = new Intent(this, MainActivity.class);
                 startActivity(search);
             }
             if(position==1) { // orders
-                Intent search = new Intent(this, ShowToShopKeeper.class);
+                Intent search = new Intent(this, Walletproduct.class);
                 startActivity(search);
             }
             if(position==2) { // fav shop
@@ -88,7 +87,7 @@ public class MainActivity extends ActionBarActivity
                 startActivity(search);
             }
             if(position==5) { //wishlist
-                //Intent search = new Intent(this, Login.class);
+                //Intent search = new Intent(this, Product.class);
                 //startActivity(search);
             }
             if(position==6) { // my profile
@@ -96,19 +95,15 @@ public class MainActivity extends ActionBarActivity
                 startActivity(search);
             }
             if(position==7) { // settings
-                //Intent search = new Intent(this, Search.class);
+                //Intent search = new Intent(this, Splash.class);
                 //startActivity(search);
             }
             if(position==8) { //FAQ
-                //Intent search = new Intent(this, Notification.class);
+                //Intent search = new Intent(this, Signup.class);
                 //startActivity(search);
             }
-            if(position==9) { // Search
-                Intent search = new Intent(this, Search.class);
-                startActivity(search);
-            }
-            if(position==10) { // Logout
-                Intent search = new Intent(this, Orders.class);
+            if(position==9) { // Logout
+                Intent search = new Intent(this, Login.class);
                 startActivity(search);
             }
         }
@@ -156,8 +151,8 @@ public class MainActivity extends ActionBarActivity
 
     public void openSearch(View v)
     {
-        Log.d("Msg","Msg");
         Intent search = new Intent(this, Search.class);
         startActivity(search);
     }
+
 }

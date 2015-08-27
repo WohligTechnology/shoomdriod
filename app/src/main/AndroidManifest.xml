@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jay.mat" >
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +17,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".Splash"
+            android:label="Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.SPLASH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".Search"
             android:label="@string/title_activity_search" >
@@ -42,12 +54,6 @@
             android:label="@string/title_activity_profile" >
         </activity>
         <activity
-            android:name=".OrdersCompleted"
-            android:label="@string/title_activity_orders_completed" >
-            android:name=".Walletproduct"
-            android:label="@string/title_activity_walletproduct" >
-        </activity>
-        <activity
             android:name=".Product"
             android:label="@string/title_activity_product" >
         </activity>
@@ -59,6 +65,11 @@
             android:name=".Signup"
             android:label="@string/title_activity_signup" >
         </activity>
+        <activity
+            android:name=".Walletproduct"
+            android:label="@string/title_activity_walletproduct" >
+        </activity>
+
     </application>
 
 </manifest>

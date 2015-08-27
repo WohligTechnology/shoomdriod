@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView7"
-                android:src="@drawable/lays"
+                android:src="@mipmap/ic_launcher"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
                 android:maxHeight="140dp"
@@ -131,7 +131,8 @@
             android:layout_gravity="center_horizontal"
             android:textSize="12sp"
             android:textColor="#a8a8aa"
-            android:textStyle="normal" />
+            android:textStyle="normal"
+            android:onClick="openSignUp"/>
 
     </LinearLayout>
 
