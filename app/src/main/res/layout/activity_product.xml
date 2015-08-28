@@ -15,13 +15,7 @@
         android:layout_below="@+id/toolbar_actionbar">
 
 
-        <fragment android:id="@+id/fragment_drawer"
-            android:name="com.example.jay.mat.NavigationDrawerFragment"
-            android:layout_width="@dimen/navigation_drawer_width"
-            android:layout_height="match_parent" android:layout_gravity="start"
-            app:layout="@layout/fragment_navigation_drawer" />
-
-            <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
+        <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
             android:clickable="true" android:layout_height="match_parent">
 
                 <ScrollView
@@ -331,6 +325,12 @@
                 </LinearLayout>
 
             </FrameLayout>
+
+        <fragment android:id="@+id/fragment_drawer"
+            android:name="com.example.jay.mat.NavigationDrawerFragment"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent" android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer" />
     </android.support.v4.widget.DrawerLayout>
 
 
