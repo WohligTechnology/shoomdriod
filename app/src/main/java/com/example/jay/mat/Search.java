@@ -1,10 +1,13 @@
 package com.example.jay.mat;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,6 +21,7 @@ public class Search extends ActionBarActivity implements NavigationDrawerCallbac
     private Toolbar mToolbar;
     private TextView tvHome;
     private int i=0;
+    final Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -136,5 +140,62 @@ public class Search extends ActionBarActivity implements NavigationDrawerCallbac
     {
         Intent product = new Intent(this,Product.class);
         startActivity(product);
+    }
+
+    public void openDiscount(View v)
+    {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+
+        // set title
+        alertDialogBuilder.setTitle("Select Discount");
+
+        // set dialog message
+        alertDialogBuilder
+                .setMessage("50% to 40%\n40% to 30%\n30% to 20%\nBelow 20%")
+                .setCancelable(true);
+
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
+    }
+
+    public void openCategory(View v)
+    {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+
+        // set title
+        alertDialogBuilder.setTitle("Select Category");
+
+        // set dialog message
+        alertDialogBuilder
+                .setMessage("Fruits and vegetables\nHealth care\nHardware\nBaby care\nHousehold supplies\nDairy products\nStationary")
+                .setCancelable(true);
+
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
+    }
+
+    public void openDistance(View v)
+    {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+
+        // set title
+        alertDialogBuilder.setTitle("Select Distance");
+
+        // set dialog message
+        alertDialogBuilder
+                .setMessage("0km to 1km\n1km to 2km\n2km to 3km\n3km to 4km\n4kmto 5km\n5km and Above")
+                .setCancelable(true);
+
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
     }
 }

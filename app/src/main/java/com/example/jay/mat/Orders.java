@@ -52,10 +52,6 @@ public class Orders extends ActionBarActivity implements NavigationDrawerCallbac
         compat12.setContent(R.id.tab3);
         tabHost.addTab(compat12);
 
-
-
-
-
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_drawer);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -64,10 +60,6 @@ public class Orders extends ActionBarActivity implements NavigationDrawerCallbac
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
         // populate the navigation drawer
-        //mNavigationDrawerFragment.setUserData("John Doe", "johndoe@doe.com", BitmapFactory.decodeResource(getResources(), R.drawable.avatar));
-
-
-
 
     }
 
