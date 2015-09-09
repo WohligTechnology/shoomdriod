@@ -2,18 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.jay.mat.Orders"
-    android:id="@+id/r">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <include android:id="@+id/toolbar_actionbar" layout="@layout/toolbar_default"
         android:layout_width="match_parent" android:layout_height="wrap_content" />
 
 
+
     <android.support.v4.widget.DrawerLayout android:id="@+id/drawer"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent" android:layout_height="700dp"
-        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent" android:layout_height="match_parent"
         android:layout_below="@+id/toolbar_actionbar">
 
         <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
@@ -35,14 +33,13 @@
                     android:background="@drawable/border"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:onClick="openShowToShopkeeper">
+                    android:layout_marginRight="10dp">
 
                     <ImageView
                         android:layout_width="91dp"
                         android:layout_height="86dp"
                         android:id="@+id/imageView6"
-                        android:src="@drawable/chhedalogo"
+                        android:src="@drawable/plainsprit"
                         android:adjustViewBounds="true"
                         android:scaleType="fitStart"
                         android:layout_margin="10dp" />
@@ -51,15 +48,15 @@
                         android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:paddingTop="15dp"
-                        android:layout_gravity="center_horizontal">
+                        android:layout_gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:layout_weight="1">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="Chheda Stores"
+                            android:text="Sprite"
                             android:id="@+id/textView14"
                             android:textSize="18sp"
                             android:textColor="#000" />
@@ -68,21 +65,28 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="Number of Products: 3"
+                            android:text="Rs: 40/-"
                             android:id="@+id/textView15"
                             android:paddingTop="5dp"
                             android:textSize="14sp"
                             android:textColor="#a8a8aa" />
 
-                        <TextView
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp">
+
+                        <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="Transaction Id: 20382315"
-                            android:id="@+id/textView16"
-                            android:paddingTop="5dp"
-                            android:textSize="14sp"
-                            android:textColor="#a8a8aa" />
+                            android:id="@+id/imageButton5"
+                            android:layout_gravity="right"
+                            android:src="@drawable/ic_action_remove"
+                            android:background="#fff" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -93,14 +97,13 @@
                     android:background="@drawable/border"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:onClick="openShowToShopkeeper">
+                    android:layout_marginRight="10dp">
 
                     <ImageView
                         android:layout_width="91dp"
                         android:layout_height="86dp"
                         android:id="@+id/imageView6"
-                        android:src="@drawable/logoraj"
+                        android:src="@drawable/plainkurkr"
                         android:adjustViewBounds="true"
                         android:scaleType="fitStart"
                         android:layout_margin="10dp" />
@@ -110,14 +113,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:paddingTop="15dp"
-                        android:layout_gravity="center_horizontal">
+                        android:layout_gravity="center_horizontal"
+                        android:padding="5dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="Raj General Store"
+                            android:text="Kurkure"
                             android:id="@+id/textView14"
                             android:textSize="18sp"
                             android:textColor="#000" />
@@ -126,34 +129,45 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="Number of Products: 6"
+                            android:text="Rs: 30/-"
                             android:id="@+id/textView15"
                             android:paddingTop="5dp"
                             android:textSize="14sp"
                             android:textColor="#a8a8aa" />
 
-                        <TextView
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp">
+
+                        <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
-                            android:text="Transaction Id: 28982015"
-                            android:id="@+id/textView16"
-                            android:paddingTop="5dp"
-                            android:textSize="14sp"
-                            android:textColor="#a8a8aa" />
+                            android:id="@+id/imageButton5"
+                            android:layout_gravity="right"
+                            android:src="@drawable/ic_action_remove"
+                            android:background="#fff" />
                     </LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>
 
 
-        </FrameLayout>
 
+        </FrameLayout>
         <fragment android:id="@+id/fragment_drawer"
             android:name="com.example.jay.mat.NavigationDrawerFragment"
             android:layout_width="@dimen/navigation_drawer_width"
             android:layout_height="match_parent" android:layout_gravity="start"
-            app:layout="@layout/fragment_navigation_drawer" />
+            app:layout="@layout/fragment_navigation_drawer"
+            tools:layout="@layout/fragment_navigation_drawer" />
+
+
 
     </android.support.v4.widget.DrawerLayout>
 

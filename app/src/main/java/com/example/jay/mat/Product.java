@@ -22,7 +22,7 @@ public class Product extends ActionBarActivity implements NavigationDrawerCallba
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
-        Intent intent = getIntent();
+        //Intent intent = getIntent();
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
         tvHome = (TextView) findViewById(R.id.toolbar_title);
@@ -37,8 +37,6 @@ public class Product extends ActionBarActivity implements NavigationDrawerCallba
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
         // populate the navigation drawer
         //mNavigationDrawerFragment.setUserData("John Doe", "johndoe@doe.com", BitmapFactory.decodeResource(getResources(), R.drawable.avatar));
-
-
 
     }
 
@@ -59,8 +57,8 @@ public class Product extends ActionBarActivity implements NavigationDrawerCallba
                 startActivity(search);
             }
             if(position==2) { // fav shop
-                //Intent search = new Intent(this, Notification.class);
-                //startActivity(search);
+                Intent search = new Intent(this, FavShops.class);
+                startActivity(search);
             }
             if(position==3) { // noti
                 Intent search = new Intent(this, Notification.class);
@@ -71,20 +69,20 @@ public class Product extends ActionBarActivity implements NavigationDrawerCallba
                 startActivity(search);
             }
             if(position==5) { //wishlist
-                //Intent search = new Intent(this, Product.class);
-                //startActivity(search);
+                Intent search = new Intent(this, Wishlist.class);
+                startActivity(search);
             }
             if(position==6) { // my profile
                 Intent search = new Intent(this, Profile.class);
                 startActivity(search);
             }
             if(position==7) { // settings
-                //Intent search = new Intent(this, Splash.class);
-                //startActivity(search);
+                Intent search = new Intent(this, Settings.class);
+                startActivity(search);
             }
             if(position==8) { //FAQ
-                //Intent search = new Intent(this, Signup.class);
-                //startActivity(search);
+                Intent search = new Intent(this, Faq.class);
+                startActivity(search);
             }
             if(position==9) { // Logout
                 Intent search = new Intent(this, Login.class);

@@ -80,8 +80,8 @@ public class Orders extends ActionBarActivity implements NavigationDrawerCallbac
                 startActivity(search);
             }
             if(position==2) { // fav shop
-                //Intent search = new Intent(this, Notification.class);
-                //startActivity(search);
+                Intent search = new Intent(this, FavShops.class);
+                startActivity(search);
             }
             if(position==3) { // noti
                 Intent search = new Intent(this, Notification.class);
@@ -92,20 +92,20 @@ public class Orders extends ActionBarActivity implements NavigationDrawerCallbac
                 startActivity(search);
             }
             if(position==5) { //wishlist
-                //Intent search = new Intent(this, Product.class);
-                //startActivity(search);
+                Intent search = new Intent(this, Wishlist.class);
+                startActivity(search);
             }
             if(position==6) { // my profile
                 Intent search = new Intent(this, Profile.class);
                 startActivity(search);
             }
             if(position==7) { // settings
-                //Intent search = new Intent(this, Splash.class);
-                //startActivity(search);
+                Intent search = new Intent(this, Settings.class);
+                startActivity(search);
             }
             if(position==8) { //FAQ
-                //Intent search = new Intent(this, Signup.class);
-                //startActivity(search);
+                Intent search = new Intent(this, Faq.class);
+                startActivity(search);
             }
             if(position==9) { // Logout
                 Intent search = new Intent(this, Login.class);

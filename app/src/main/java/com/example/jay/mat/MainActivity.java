@@ -9,10 +9,13 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.KeyEvent;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.view.inputmethod.EditorInfo;
 
 public class MainActivity extends ActionBarActivity
         implements NavigationDrawerCallbacks {
@@ -25,7 +28,7 @@ public class MainActivity extends ActionBarActivity
     private TextView tvHome;
     private int i=0;
     private ImageView iv;
-    private Button btSearch;
+    private EditText etProSearch, etAreaSearch;
 
 
     @Override
@@ -36,7 +39,8 @@ public class MainActivity extends ActionBarActivity
         tvHome = (TextView) findViewById(R.id.toolbar_title);
         setSupportActionBar(mToolbar);
         iv = (ImageView) findViewById(R.id.imageView);
-        //btSearch = (Button) findViewById(R.id.editText);
+        etProSearch = (EditText) findViewById(R.id.etProductSearch);
+        etAreaSearch = (EditText) findViewById(R.id.etAreaProduct);
 
         tvHome.setText("Home");
         mNavigationDrawerFragment = (NavigationDrawerFragment)
@@ -45,10 +49,8 @@ public class MainActivity extends ActionBarActivity
 
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
-        // populate the navigation drawer
-        //mNavigationDrawerFragment.setUserData("John Doe", "johndoe@doe.com", BitmapFactory.decodeResource(getResources(), R.drawable.avatar));
 
-        iv.setOnClickListener(new OnClickListener() {
+        /*iv.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -57,7 +59,53 @@ public class MainActivity extends ActionBarActivity
                 startActivity(search);
 
             }
+        });*/
+
+        /*etProSearch.setOnKeyListener(new View.OnKeyListener() {
+            public boolean onKey(View view, int keyCode, KeyEvent keyevent) {
+                //If the keyevent is a key-down event on the "enter" button
+                if ((keyevent.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                    //...
+                    // Perform your action on key press here
+                    // ...
+                    System.out.println("Pressed Enter");
+                    Intent search = new Intent(MainActivity.this, Search.class);
+                    startActivity(search);
+                    return true;
+                }
+                return false;
+            }
+        });*/
+
+        etProSearch.setOnEditorActionListener(new EditText.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    //submit_btn.performClick();
+                    System.out.println("Pressed Enter");
+                    Intent search = new Intent(MainActivity.this, Product4.class);
+                    startActivity(search);
+                    return true;
+                }
+                return false;
+            }
         });
+
+        etAreaSearch.setOnEditorActionListener(new EditText.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    //submit_btn.performClick();
+                    System.out.println("Pressed Enter");
+                    Intent search = new Intent(MainActivity.this, Search.class);
+                    startActivity(search);
+                    return true;
+                }
+                return false;
+            }
+        });
+
+
     }
 
     @Override
@@ -75,8 +123,8 @@ public class MainActivity extends ActionBarActivity
                 startActivity(search);
             }
             if(position==2) { // fav shop
-                //Intent search = new Intent(this, Notification.class);
-                //startActivity(search);
+                Intent search = new Intent(this, FavShops.class);
+                startActivity(search);
             }
             if(position==3) { // noti
                 Intent search = new Intent(this, Notification.class);
@@ -87,20 +135,20 @@ public class MainActivity extends ActionBarActivity
                 startActivity(search);
             }
             if(position==5) { //wishlist
-                //Intent search = new Intent(this, Product.class);
-                //startActivity(search);
+                Intent search = new Intent(this, Wishlist.class);
+                startActivity(search);
             }
             if(position==6) { // my profile
                 Intent search = new Intent(this, Profile.class);
                 startActivity(search);
             }
             if(position==7) { // settings
-                //Intent search = new Intent(this, Splash.class);
-                //startActivity(search);
+                Intent search = new Intent(this, Settings.class);
+                startActivity(search);
             }
             if(position==8) { //FAQ
-                //Intent search = new Intent(this, Signup.class);
-                //startActivity(search);
+                Intent search = new Intent(this, Faq.class);
+                startActivity(search);
             }
             if(position==9) { // Logout
                 Intent search = new Intent(this, Login.class);
@@ -153,6 +201,18 @@ public class MainActivity extends ActionBarActivity
     {
         Intent search = new Intent(this, Search.class);
         startActivity(search);
+    }
+
+    public void openSprite(View v)
+    {
+        Intent sprite = new Intent(this, Product2.class);
+        startActivity(sprite);
+    }
+
+    public void openLays(View v)
+    {
+        Intent lays = new Intent(this, Product.class);
+        startActivity(lays);
     }
 
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e8e8e8"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Discount:"
+        android:id="@+id/textView58"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="50% to 40%"
+        android:id="@+id/textView54"
+        android:background="#fff"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="40% to 30%"
+        android:id="@+id/textView55"
+        android:autoText="false"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="30% to 20%"
+        android:id="@+id/textView56"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Below 20%"
+        android:id="@+id/textView57"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+</LinearLayout>

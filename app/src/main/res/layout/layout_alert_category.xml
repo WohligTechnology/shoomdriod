@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e8e8e8"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Category:"
+        android:id="@+id/textView58"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Fruits and vegetables"
+        android:id="@+id/textView54"
+        android:background="#fff"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Health care"
+        android:id="@+id/textView55"
+        android:autoText="false"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hardware"
+        android:id="@+id/textView56"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Baby care"
+        android:id="@+id/textView57"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Household supplies"
+        android:id="@+id/textView525"
+        android:autoText="false"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Dairy products"
+        android:id="@+id/textView526"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Stationary"
+        android:id="@+id/textView527"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+</LinearLayout>

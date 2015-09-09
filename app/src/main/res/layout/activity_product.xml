@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.jay.mat.Orders">
+    tools:context="com.example.jay.mat.Orders"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <include android:id="@+id/toolbar_actionbar" layout="@layout/toolbar_default"
         android:layout_width="match_parent" android:layout_height="wrap_content" />
@@ -127,8 +129,7 @@
                                     android:layout_gravity="center_horizontal"
                                     android:gravity="top|center_horizontal"
                                     android:enabled="false"
-                                    android:clickable="false"
-                                    />
+                                    android:clickable="false" />
 
                                 <ImageButton
                                     android:layout_width="wrap_content"

@@ -2,11 +2,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <include android:id="@+id/toolbar_actionbar" layout="@layout/toolbar_default"
         android:layout_width="match_parent" android:layout_height="wrap_content" />
-
 
 
     <android.support.v4.widget.DrawerLayout android:id="@+id/drawer"
@@ -37,7 +38,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText"
+                    android:id="@+id/etProductSearch"
                     android:background="@drawable/round_corner"
                     android:padding="10dp"
                     android:hint="@string/text_search"
@@ -48,12 +49,16 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_margin="15dp"/>
+                    android:layout_margin="15dp"
+
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"/>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText2"
+                    android:id="@+id/etAreaProduct"
                     android:background="@drawable/round_corner"
                     android:padding="10dp"
                     android:hint="@string/text_see"
@@ -65,7 +70,11 @@
                     android:layout_alignRight="@+id/editText"
                     android:layout_alignEnd="@+id/editText"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"/>
+                    android:layout_marginRight="15dp"
+
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"/>
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -80,10 +89,10 @@
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:id="@+id/imageView2"
-                        android:src="@drawable/banner2"
+                        android:src="@drawable/spritemain"
                         android:adjustViewBounds="false"
                         android:scaleType="fitXY"
-                        android:onClick="openSearch"/>
+                        android:onClick="openSprite"/>
                 </LinearLayout>
             </LinearLayout>
         </FrameLayout>

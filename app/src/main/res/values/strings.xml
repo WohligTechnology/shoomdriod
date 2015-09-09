@@ -26,4 +26,11 @@
     <string name="sprit">MRP <strike> Rs 40/- </strike> </string>
 
     <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_product2">Product2</string>
+    <string name="title_activity_fav_shops">FavShops</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_faq">Faq</string>
+    <string name="title_activity_wishlist">Wishlist</string>
+    <string name="title_activity_product3">Product3</string>
+    <string name="title_activity_product4">Product4</string>
 </resources>

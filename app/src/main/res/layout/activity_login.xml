@@ -4,7 +4,9 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.jay.mat.Orders"
-    android:id="@+id/r">
+    android:id="@+id/r"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
     <include android:id="@+id/toolbar_actionbar" layout="@layout/toolbar_default"
         android:layout_width="match_parent" android:layout_height="wrap_content" />

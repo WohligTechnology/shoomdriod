@@ -1,34 +1,26 @@
 package com.example.jay.mat;
 
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
-import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.view.View;
-import android.view.LayoutInflater;
 
-public class Search extends ActionBarActivity implements NavigationDrawerCallbacks{
+public class Faq extends ActionBarActivity implements NavigationDrawerCallbacks {
 
-    private NavigationDrawerFragment mNavigationDrawerFragment;
     private Toolbar mToolbar;
     private TextView tvHome;
+    private NavigationDrawerFragment mNavigationDrawerFragment;
     private int i=0;
-    final Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search);
-
+        setContentView(R.layout.activity_faq);
         Intent intent = getIntent();
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
@@ -38,7 +30,7 @@ public class Search extends ActionBarActivity implements NavigationDrawerCallbac
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_drawer);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        tvHome.setText("Search");
+        tvHome.setText("FAQ");
 
         // Set up the drawer.
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
@@ -51,7 +43,6 @@ public class Search extends ActionBarActivity implements NavigationDrawerCallbac
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         //Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
-
         if(i>0){
 
             if(position==0) { // home
@@ -135,67 +126,5 @@ public class Search extends ActionBarActivity implements NavigationDrawerCallbac
         }*/
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void openProduct(View v)
-    {
-        Intent product = new Intent(this,Product.class);
-        startActivity(product);
-    }
-
-    public void openDiscount(View v)
-    {
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        LayoutInflater inflater = getLayoutInflater();
-        builder.setView(inflater.inflate(R.layout.layout_alert_discount, null));
-        builder.setCancelable(true);
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-    }
-
-    public void openCategory(View v)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        LayoutInflater inflater = getLayoutInflater();
-        builder.setView(inflater.inflate(R.layout.layout_alert_category, null));
-        builder.setCancelable(true);
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-    }
-
-    public void openDistance(View v)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        LayoutInflater inflater = getLayoutInflater();
-        builder.setView(inflater.inflate(R.layout.layout_alert_distance, null));
-        builder.setCancelable(true);
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-    }
-
-
-    public void openSprite(View v)
-    {
-        Intent search = new Intent(this, Product2.class);
-        startActivity(search);
-    }
-
-    public void openLays(View v)
-    {
-        Intent search = new Intent(this, Product.class);
-        startActivity(search);
-    }
-
-    public void openKurkure(View v)
-    {
-        Intent search = new Intent(this, Product3.class);
-        startActivity(search);
-    }
-
-    public void openKrackjack(View v)
-    {
-        Intent search = new Intent(this, Product4.class);
-        startActivity(search);
     }
 }

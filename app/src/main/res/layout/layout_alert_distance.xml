@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e8e8e8"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Distance:"
+        android:id="@+id/textView58"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="0Km to 1Km"
+        android:id="@+id/textView54"
+        android:background="#fff"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="1Km to 2Km"
+        android:id="@+id/textView55"
+        android:autoText="false"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="2Km to 3Km"
+        android:id="@+id/textView56"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="3Km to 4Km"
+        android:id="@+id/textView57"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="4Km to 5Km"
+        android:id="@+id/textView525"
+        android:autoText="false"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="5Km to Above"
+        android:id="@+id/textView526"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+</LinearLayout>

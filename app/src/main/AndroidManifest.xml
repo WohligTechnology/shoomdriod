@@ -2,38 +2,37 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jay.mat" >
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-
         <activity
             android:name=".Splash"
             android:label="Splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:label="Main" >
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
-            <!--</intent-filter>-->
-        </activity>
 
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- </intent-filter> -->
+        </activity>
         <activity
             android:name=".Search"
             android:label="@string/title_activity_search" >
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.SEARCH" />-->
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
-            <!--</intent-filter>-->
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.SEARCH" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".Notification"
@@ -67,7 +66,34 @@
             android:name=".Walletproduct"
             android:label="@string/title_activity_walletproduct" >
         </activity>
-
+        <activity
+            android:name=".Product2"
+            android:label="@string/title_activity_product2" >
+        </activity>
+        <activity
+            android:name=".FavShops"
+            android:label="@string/title_activity_fav_shops" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".Faq"
+            android:label="@string/title_activity_faq" >
+        </activity>
+        <activity
+            android:name=".Wishlist"
+            android:label="@string/title_activity_wishlist" >
+        </activity>
+        <activity
+            android:name=".Product3"
+            android:label="@string/title_activity_product3" >
+        </activity>
+        <activity
+            android:name=".Product4"
+            android:label="@string/title_activity_product4" >
+        </activity>
     </application>
 
 </manifest>
